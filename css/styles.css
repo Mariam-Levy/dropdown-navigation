@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.button {
+  width: 104px;
+  height: 42px;
+  padding: 13px 22px;
+  border-radius: 15px;
+  background-color: #FAFAFA;
+  border: 1px solid #686868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: normal;
+  color: #686868;
+}
+
+.nabvar {
+  width: 100vw;
+  height: auto;
+  padding: 21px 40px 21px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nabvar .navbar__routing {
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nabvar .navbar__routing .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.nabvar .navbar__routing .navbar__items .items {
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: normal;
+  color: #686868;
+}
+.nabvar .navbar__routing .navbar__items .items li:not(:last-child) {
+  margin-right: 40px;
+}
+.nabvar .navbar__routing .navbar__items .items .item img {
+  margin-left: 9px;
+}
+.nabvar .navbar__auth {
+  width: 13.52%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nabvar .navbar__auth .login {
+  text-decoration-line: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: normal;
+  color: #686868;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFAFA;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+.nabvar {
+    width: 100vw;
+    height: auto;
+    padding: 21px 40px 21px 40px;
+    @include flex-group(flex, space-between, center);
+
+    .navbar__routing {
+        width: 44%;
+        @include flex-group(flex, space-between, center);
+        .navbar__logo {
+            display: flex;
+            align-items: center;
+
+        }
+        .navbar__items {
+            .items {
+                display: flex;
+                list-style-type: none;
+                li:not(:last-child) {
+                    margin-right: 40px;
+                }
+                .item {
+                    img {
+                        margin-left: 9px;
+                    }
+                }
+                @include typography(14px, 400, 16px, normal, $medium-grey)
+            }
+        }
+    }
+
+
+    .navbar__auth {
+        width: 13.52%;
+        @include flex-group(flex, space-between, center);
+        .login {
+            text-decoration-line: none;
+            @include typography(14px, 400, 16px, normal, $medium-grey)
+        }
+    }
+}

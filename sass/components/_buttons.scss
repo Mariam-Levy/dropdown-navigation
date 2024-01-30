@@ -1,0 +1,10 @@
+.button {
+    width: 104px;
+    height: 42px;
+    padding: 13px 22px;
+    border-radius: 15px;
+    background-color: $almost-white;
+    border: 1px solid #686868;
+    @include flex-group(flex, center, center);
+    @include typography(14px, 400, 16px, normal, $medium-grey)
+}
