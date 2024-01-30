@@ -6,8 +6,17 @@
     background-color: $almost-white;
     border: 1px solid #686868;
     cursor: pointer;
+    transition: .3s ease;
     @include flex-group(flex, center, center);
     @include typography(14px, 400, 16px, normal, $medium-grey);
+
+    &:hover {
+        border: 1.5px solid $black;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 
     @include medium {
         width: 100px;

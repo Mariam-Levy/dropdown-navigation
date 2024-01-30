@@ -14,28 +14,25 @@
 
         <nav class="nabvar">
             <div class="navbar__routing">
-                <div class="navbar__logo">
+                <div class="logo">
                     <img src="./img/snap.svg" alt="Snap">
                 </div>
                 <div class="navbar__items">
                     <ul class="items">
-                        <li class="item"><a href=""></a>Features <img src="./img/Path 5.svg" alt=""></li>
-                        <div class="item__dropdown">
-                                <ul class="dropdown__list">
-                                    <li><img src="./img/List.svg" alt="">Todo List</li>
-                                    <li><img src="./img/calendar.svg" alt="">Calendar</li>
-                                    <li><img src="./img/Bell.svg" alt="">Reminders</li>
-                                    <li><img src="./img/planning.svg" alt="">Planning</li>
-                                </ul>
+
+
+                        <div class="dropdown">
+                            <li id="dropdown-li" class="item"><a href=""></a>Features <img src="./img/Path 5.svg" alt=""></li>
+                            <div id="dropdown-content" class="dropdown-content dropdown-content--show">
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Calendar</a></li>
+                            </div>
                         </div>
+                        
+                        
+                        
                         <li class="item"><a href=""></a>Company <img src="./img/Path 5.svg" alt=""></li>
-                        <div class="item__dropdown item__dropdown--company">
-                            <ul class="dropdown__list">
-                                <li>History</li>
-                                <li>Our Team</li>
-                                <li>Blog</li>
-                            </ul>
-                        </div>
                         <li class="item"><a href=""></a>Careers</li>
                         <li class="item"><a href=""></a>About</li>
                     </ul>
@@ -52,5 +49,7 @@
         <div class="hero">
         </div>
     </div>
+
+    <script src="./dropdown.js"></script>
 </body>
 </html>

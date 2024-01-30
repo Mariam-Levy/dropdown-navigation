@@ -12,12 +12,6 @@
             width: 60%;
         }
 
-        .navbar__logo {
-            width: 25%;
-            display: flex;
-            align-items: center;
-
-        }
         .navbar__items {
             width: 75%;
             .items {
@@ -28,6 +22,11 @@
                 .item {
                     position: relative;
                     cursor: pointer;
+
+                    &:hover {
+                        color: $black;
+                    }
+
                     img {
                         margin-left: 9px;
                     }
@@ -51,7 +50,12 @@
 
         .login {
             text-decoration-line: none;
-            @include typography(14px, 400, 16px, normal, $medium-grey)
+            @include typography(14px, 400, 16px, normal, $medium-grey);
+
+            &:hover {
+                color: $black;
+            }
+
         }
     }
 }

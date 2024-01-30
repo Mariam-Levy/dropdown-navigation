@@ -1,4 +1,4 @@
-.item__dropdown {
+/* .item__dropdown {
     width: 10.63%;
     height: auto;
     padding: 24px;
@@ -27,4 +27,43 @@
             }
         }
     }
+} */
+
+/* 
+<ul class="dropdown__list">
+    <li><img src="./img/List.svg" alt="">Todo List</li>
+    <li><img src="./img/calendar.svg" alt="">Calendar</li>
+    <li><img src="./img/Bell.svg" alt="">Reminders</li>
+    <li><img src="./img/planning.svg" alt="">Planning</li>
+</ul>
+
+<ul class="dropdown__list">
+    <li>History</li>
+    <li>Our Team</li>
+    <li>Blog</li>
+</ul>
+*/
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropdown-content {
+        position: absolute;
+        width: 153px;
+        height: 160px;
+        background-color: pink;
+        z-index: 1;
+        margin-top: 20px;
+        right: 0;
+
+        display: none;
+
+        &.dropdown-content--show {
+            display: block;
+        }
+    }
 }
+
+

@@ -16,6 +16,7 @@ body {
   background-color: #FAFAFA;
   border: 1px solid #686868;
   cursor: pointer;
+  transition: 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,12 @@ body {
   line-height: 16px;
   font-style: normal;
   color: #686868;
+}
+.button:hover {
+  border: 1.5px solid #151515;
+}
+.button:active {
+  transform: scale(0.95);
 }
 @media (max-width: 767px) {
   .button {
@@ -51,11 +58,6 @@ body {
     width: 60%;
   }
 }
-.nabvar .navbar__routing .navbar__logo {
-  width: 25%;
-  display: flex;
-  align-items: center;
-}
 .nabvar .navbar__routing .navbar__items {
   width: 75%;
 }
@@ -74,6 +76,9 @@ body {
 .nabvar .navbar__routing .navbar__items .items .item {
   position: relative;
   cursor: pointer;
+}
+.nabvar .navbar__routing .navbar__items .items .item:hover {
+  color: #151515;
 }
 .nabvar .navbar__routing .navbar__items .items .item img {
   margin-left: 9px;
@@ -102,35 +107,76 @@ body {
   font-style: normal;
   color: #686868;
 }
+.nabvar .navbar__auth .login:hover {
+  color: #151515;
+}
 
-.item__dropdown {
-  width: 10.63%;
-  height: auto;
-  padding: 24px;
-  top: 76px;
+/* .item__dropdown {
+    width: 10.63%;
+    height: auto;
+    padding: 24px;
+    top: 76px;
+    position: absolute;
+    left: 120px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    @include flex-group(flex, center, center);
+
+    &.item__dropdown--company {
+        width: 8.06%;
+        left: 352px;
+    }
+    .dropdown__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li:not(:last-child){
+            margin-bottom: 16px;
+        }
+        li {
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+} */
+/* 
+<ul class="dropdown__list">
+    <li><img src="./img/List.svg" alt="">Todo List</li>
+    <li><img src="./img/calendar.svg" alt="">Calendar</li>
+    <li><img src="./img/Bell.svg" alt="">Reminders</li>
+    <li><img src="./img/planning.svg" alt="">Planning</li>
+</ul>
+
+<ul class="dropdown__list">
+    <li>History</li>
+    <li>Our Team</li>
+    <li>Blog</li>
+</ul>
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .dropdown-content {
   position: absolute;
-  left: 120px;
-  background: #FFF;
-  border-radius: 10px;
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+  width: 153px;
+  height: 160px;
+  background-color: pink;
+  z-index: 1;
+  margin-top: 20px;
+  right: 0;
+  display: none;
+}
+.dropdown .dropdown-content.dropdown-content--show {
+  display: block;
+}
+
+.logo {
+  width: 25%;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.item__dropdown.item__dropdown--company {
-  width: 8.06%;
-  left: 352px;
-}
-.item__dropdown .dropdown__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.item__dropdown .dropdown__list li:not(:last-child) {
-  margin-bottom: 16px;
-}
-.item__dropdown .dropdown__list li img {
-  margin-right: 15px;
 }
 
 .main {
