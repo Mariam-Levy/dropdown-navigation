@@ -15,6 +15,7 @@ body {
   border-radius: 15px;
   background-color: #FAFAFA;
   border: 1px solid #686868;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +24,12 @@ body {
   line-height: 16px;
   font-style: normal;
   color: #686868;
+}
+@media (max-width: 767px) {
+  .button {
+    width: 100px;
+    height: 38px;
+  }
 }
 
 .nabvar {
@@ -39,21 +46,34 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .nabvar .navbar__routing {
+    width: 60%;
+  }
+}
 .nabvar .navbar__routing .navbar__logo {
+  width: 25%;
   display: flex;
   align-items: center;
 }
+.nabvar .navbar__routing .navbar__items {
+  width: 75%;
+}
 .nabvar .navbar__routing .navbar__items .items {
-  display: flex;
+  width: 100%;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   font-style: normal;
   color: #686868;
 }
-.nabvar .navbar__routing .navbar__items .items li:not(:last-child) {
-  margin-right: 40px;
+.nabvar .navbar__routing .navbar__items .items .item {
+  position: relative;
+  cursor: pointer;
 }
 .nabvar .navbar__routing .navbar__items .items .item img {
   margin-left: 9px;
@@ -64,6 +84,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .nabvar .navbar__auth {
+    width: 16.52%;
+  }
+}
+@media (max-width: 767px) {
+  .nabvar .navbar__auth {
+    width: 23%;
+  }
+}
 .nabvar .navbar__auth .login {
   text-decoration-line: none;
   font-size: 14px;
@@ -71,6 +101,36 @@ body {
   line-height: 16px;
   font-style: normal;
   color: #686868;
+}
+
+.item__dropdown {
+  width: 10.63%;
+  height: auto;
+  padding: 24px;
+  top: 76px;
+  position: absolute;
+  left: 120px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item__dropdown.item__dropdown--company {
+  width: 8.06%;
+  left: 352px;
+}
+.item__dropdown .dropdown__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.item__dropdown .dropdown__list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.item__dropdown .dropdown__list li img {
+  margin-right: 15px;
 }
 
 .main {

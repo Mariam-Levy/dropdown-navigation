@@ -1,0 +1,30 @@
+.item__dropdown {
+    width: 10.63%;
+    height: auto;
+    padding: 24px;
+    top: 76px;
+    position: absolute;
+    left: 120px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    @include flex-group(flex, center, center);
+
+    &.item__dropdown--company {
+        width: 8.06%;
+        left: 352px;
+    }
+    .dropdown__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li:not(:last-child){
+            margin-bottom: 16px;
+        }
+        li {
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+}

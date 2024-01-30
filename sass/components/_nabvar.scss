@@ -7,25 +7,33 @@
     .navbar__routing {
         width: 44%;
         @include flex-group(flex, space-between, center);
+
+        @include xl-large {
+            width: 60%;
+        }
+
         .navbar__logo {
+            width: 25%;
             display: flex;
             align-items: center;
 
         }
         .navbar__items {
+            width: 75%;
             .items {
-                display: flex;
+                width: 100%;
                 list-style-type: none;
-                li:not(:last-child) {
-                    margin-right: 40px;
-                }
+                @include flex-group(flex, space-between, center);
+                @include typography(14px, 400, 16px, normal, $medium-grey);
                 .item {
+                    position: relative;
+                    cursor: pointer;
                     img {
                         margin-left: 9px;
                     }
                 }
-                @include typography(14px, 400, 16px, normal, $medium-grey)
             }
+        
         }
     }
 
@@ -33,9 +41,18 @@
     .navbar__auth {
         width: 13.52%;
         @include flex-group(flex, space-between, center);
+
+        @include xl-large {
+            width: 16.52%;
+        }
+        @include medium {
+            width: 23%;;
+        }
+
         .login {
             text-decoration-line: none;
             @include typography(14px, 400, 16px, normal, $medium-grey)
         }
     }
 }
+
