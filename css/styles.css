@@ -188,7 +188,7 @@ body {
 }
 .main .hero {
   width: 100%;
-  height: auto;
+  height: 75%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -232,7 +232,7 @@ body {
 }
 .main .hero .hero__img {
   width: 33.33%;
-  /* height: 640px; */
+  height: 100%;
   display: flex;
 }
 .main .hero .hero__img img {

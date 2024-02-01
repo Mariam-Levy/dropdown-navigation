@@ -9,7 +9,7 @@
 
     .hero {
         width: 100%;
-        height: auto;
+        height: 75%;
         @include flex-group(flex, space-evenly, center);
 
         .hero__description {
@@ -43,7 +43,7 @@
 
         .hero__img {
             width: 33.33%;
-            /* height: 640px; */
+            height: 100%;
             display: flex;
             img {
                 width: 100%;
