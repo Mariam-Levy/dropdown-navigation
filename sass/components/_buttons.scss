@@ -22,4 +22,17 @@
         width: 100px;
         height: 38px;
     }
+
+    &.button--black {
+        width: 163px;
+        height: 56px;
+        background-color: $black;
+        color: $almost-white;
+
+        &:hover {
+            border: 1px solid $black;
+            background-color: transparent;
+            color: $black;
+        }
+    }
 }

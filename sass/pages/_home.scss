@@ -2,5 +2,52 @@
     width: 100vw;
     height: 100vh;
     background-color: $almost-white;
-    
+
+    .nabvar {
+        margin-bottom: 46px;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+        @include flex-group(flex, space-evenly, center);
+
+        .hero__description {
+            width: 37.5%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+
+            .hero__texts {
+                margin-bottom: 118px;
+                .hero__title {
+                    width: 98.15%;
+                    margin-bottom: 48px;
+                    letter-spacing: -1.111px;
+                    @include typography(80px, 700, 80px, normal, $black);
+                }
+                .hero__paragraph {
+                    width: 88.33%;
+                    margin-bottom: 51px;
+                    @include typography(18px, 400, 28px, normal, $medium-grey);
+                }
+            }
+            .hero__icons {
+                width: 88.52%;
+                height: auto;
+                flex-wrap: wrap;
+                @include flex-group(flex, space-between, center);
+            }
+        }
+
+        .hero__img {
+            width: 33.33%;
+            /* height: 640px; */
+            display: flex;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
