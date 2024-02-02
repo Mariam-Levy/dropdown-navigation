@@ -3,6 +3,10 @@
     height: 100vh;
     background-color: $almost-white;
 
+    @include medium {
+        height: auto;
+    }
+
     .nabvar {
         margin-bottom: 46px;
     }
@@ -44,12 +48,12 @@
                     margin-bottom: 80px;
                 }
                 @include medium {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 48px;
-                    padding: 0 16px;
                     width: 100%;
+                    padding: 0 16px;
+                    margin-bottom: 48px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
                 }
                 .hero__title {
                     width: 98.15%;
@@ -89,10 +93,11 @@
                 height: auto;
                 flex-wrap: wrap;
                 @include flex-group(flex, space-between, center);
+            
                 @include medium {
-                    margin-bottom: 90px;
                     width: 100%;
                     padding: 0 16px;
+                    margin-bottom: 90px;
                     img {
                         width: 81px;
                         height: 26px;
@@ -111,11 +116,11 @@
             }
 
             @include medium {
-                width: 100%;
+                width: 100vw;
                 order: 1;
                 margin-bottom: 47.75px;
             }
-
+        
             .img-desktop{
                 display: block;
                 width: 100%;
@@ -124,6 +129,7 @@
                     display: none;
                 }
             }
+        
             .img-mobile{
                 display: none;
 

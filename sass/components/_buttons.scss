@@ -19,8 +19,8 @@
     }
 
     @include medium {
-        width: 100px;
-        height: 38px;
+        width: 195px;
+        background: transparent;
     }
 
     &.button--black {
@@ -55,7 +55,7 @@
     @include medium {
         display: block;
         margin-bottom: 31.98px;
-        padding: 21.98px 19.98px 0 0;
+        padding: 0;
         svg {
             width: 24px;
             height: 24px;

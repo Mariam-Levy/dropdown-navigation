@@ -5,6 +5,7 @@ const dropdownItems = document.querySelectorAll('.dropdown-item');
 const navbarVisibility = document.getElementById('navbar__visibility');
 const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
+const navbar = document.getElementById('navbar__auth');
 
 // Variable para rastrear el último menú desplegable abierto
 let lastOpenedDropdown = null;
@@ -43,13 +44,13 @@ dropdownItems.forEach(function(dropdownItem) {
 });
 
 
-
-
 openMenu.addEventListener('click', function() {
     navbarVisibility.classList.add('navbar__items--visibility');
+    navbar.classList.add('navbar__items--visibility');
 })
 closeMenu.addEventListener('click', function() {
     navbarVisibility.classList.remove('navbar__items--visibility');
+    navbar.classList.remove('navbar__items--visibility');
 })
 
 
