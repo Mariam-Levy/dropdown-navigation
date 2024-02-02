@@ -69,6 +69,7 @@
                     @include medium {
                         width: 100%;
                         text-align: center;
+                        margin-bottom: 16px;
                         letter-spacing: -0.5px;
                         @include typography(36px, 700, 42px, normal, $black);
                     }
@@ -84,6 +85,7 @@
                     @include medium {
                         width: 100%;
                         text-align: center;
+                        margin-bottom: 24px;
                         @include typography(16px, 400, 26px, normal, $medium-grey);
                     }
                 }
@@ -116,8 +118,7 @@
             }
 
             @include medium {
-                width: 100vw;
-                order: 1;
+                width: 100%;
                 margin-bottom: 47.75px;
             }
         
