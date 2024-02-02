@@ -13,11 +13,17 @@
     <div class="main">
 
         <nav class="nabvar">
+            
             <div class="navbar__routing">
                 <div class="logo">
-                    <img src="./img/snap.svg" alt="Snap">
+                    <img class="logo__img" src="./img/snap.svg" alt="Snap">
                 </div>
-                <div class="navbar__items">
+                
+                <div id="navbar__visibility" class="navbar__items">
+                    <button id="close-menu" class="close-menu"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <rect x="2.39355" y="0.979187" width="32" height="2" transform="rotate(45 2.39355 0.979187)" fill="#151515"/>
+                        <rect x="0.979248" y="23.6066" width="32" height="2" transform="rotate(-45 0.979248 23.6066)" fill="#151515"/>
+                        </svg></button>
                     <ul class="items">
 
                         <div class="dropdown">
@@ -44,7 +50,13 @@
                 </div>
             </div>
         
-            <div class="navbar__auth">
+            <button id="open-menu" class="open-menu"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+                <rect width="32" height="2" fill="#151515"/>
+                <rect y="8" width="32" height="2" fill="#151515"/>
+                <rect y="16" width="32" height="2" fill="#151515"/>
+                </svg></button>
+
+            <div id="navbar__auth" class="navbar__auth">
                 <a class="login" href="#">Login</a>
                 <button class="button">Register</button>
             </div>
@@ -66,7 +78,9 @@
                 </div>
             </div>
             <div class="hero__img">
-                <img src="./img/heroImg.svg" alt="">
+                <img class="img-desktop" srcset="./img/img-hero-desktop.svg" alt="">
+                    <!-- <img src="./img/img-hero-desktop.svg" alt=""> -->
+                <img class="img-mobile" src="./img/img-hero-mobile.svg" alt="">
             </div>
         </div>
 

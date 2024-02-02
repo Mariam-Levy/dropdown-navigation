@@ -4,6 +4,11 @@
     padding: 21px 40px 21px 40px;
     @include flex-group(flex, space-between, center);
 
+    @include medium {
+        margin-bottom: 24px;
+        padding: 16px;
+    }
+
     .navbar__routing {
         width: 44%;
         @include flex-group(flex, space-between, center);
@@ -14,11 +19,45 @@
 
         .navbar__items {
             width: 75%;
+            @include medium {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 43%;
+                padding: 2rem;
+                bottom: 0;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 32px;
+            }
+            &.navbar__items--visibility {
+                opacity: 1;
+                visibility: visible;
+                @include medium {
+                    width: 240px;
+                    background: $white;
+                    padding: 0;
+                }
+            }
             .items {
                 width: 100%;
                 list-style-type: none;
                 @include flex-group(flex, space-between, center);
                 @include typography(14px, 400, 16px, normal, $medium-grey);
+
+                @include medium {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0 0 0 24px;
+
+                    li:not(:last-child){
+                        margin-bottom: 16px;
+                    }
+                }
                 .item {
                     position: relative;
                     cursor: pointer;
@@ -44,8 +83,14 @@
         @include xl-large {
             width: 16.52%;
         }
+
+        @include m-large {
+            width: 20%;
+        }
+
         @include medium {
-            width: 23%;;
+            width: 23%;
+            display: none;
         }
 
         .login {

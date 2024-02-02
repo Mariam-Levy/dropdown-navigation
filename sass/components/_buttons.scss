@@ -36,3 +36,29 @@
         }
     }
 }
+
+.open-menu{
+    display: none;
+    border: none;
+    background: transparent;
+
+    @include medium {
+        display: block;
+    }
+}
+
+.close-menu {
+    display: none;
+    border: none;
+    background: transparent;
+
+    @include medium {
+        display: block;
+        margin-bottom: 31.98px;
+        padding: 21.98px 19.98px 0 0;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

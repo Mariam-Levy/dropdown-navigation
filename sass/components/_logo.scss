@@ -2,4 +2,13 @@
     width: 25%;
     display: flex;
     align-items: center;
+
+    @include medium {
+        width: 87px;
+        height: 35px;
+        .logo__img {
+            width: 100%;
+        }
+    }
+
 }
