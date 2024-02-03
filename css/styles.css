@@ -105,7 +105,6 @@ body {
 }
 @media (max-width: 767px) {
   .nabvar .navbar__routing .navbar__items {
-    /* width: 43%; */
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -126,6 +125,10 @@ body {
 @media (max-width: 767px) {
   .nabvar .navbar__routing .navbar__items.navbar__items--visibility {
     width: 240px;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
     background: #FFF;
     padding: 21.98px 20px 0 24px;
   }

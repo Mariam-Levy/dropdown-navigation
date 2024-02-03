@@ -18,7 +18,6 @@
             display: flex;
             justify-content: space-between;
             @include medium {
-                /* width: 43%; */
                 visibility: hidden;
                 opacity: 0;
                 position: absolute;
@@ -34,6 +33,10 @@
                 visibility: visible;
                 @include medium {
                     width: 240px;
+                    height: 100%;
+                    z-index: 1;
+                    position: fixed;
+                    overflow-x: hidden;
                     background: $white;
                     padding: 21.98px 20px 0 24px;
                 }
